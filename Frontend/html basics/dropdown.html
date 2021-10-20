@@ -5,7 +5,7 @@
 	<title> Dropdown</title>
 </head>
 <body>
-
+<form method="post"> 
 	<p> Month </p>
 	<p> Press ctrl/cmd to select multiple options </p>
 	<select name = "month_selected" multiple>
@@ -28,11 +28,38 @@
 
 
 	<!-- To have multiple buttons -->
-	<br>
+	<!-- <br>
 	<p>
 	<input type="button" name="next" value="Button1">
-	<button type="reset" name="reset"> <img src="C:\Users\mridu\Downloads\button.png" height="50" width="50">  </button>
-</p>
+	<button type="reset" name="reset"> <img src="C:\Users\mridu\Downloads\button.png" height="50" width="50">  </button> -->
+<!-- </p>
+ -->
+
+
+<h5>The optgroup element</h5>
+
+<p>The optgroup tag is used to group related options in a drop-down list:</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+ 
+
+
+
+
 
 </body>
 </html>
